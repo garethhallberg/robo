@@ -24,7 +24,6 @@ class App extends Component {
   }
 
   onSearchBarChange = (event) => {
-    console.log('hello world searched ' + event.target.value)
     this.setState({ searchfield: event.target.value })
   }
 
@@ -37,7 +36,7 @@ class App extends Component {
     return robots.length === 0 ? <h1>Loading stuff baby</h1> : 
     (
         <div className='tc'>
-          <h1 className="f1">RoboFriends</h1> 
+          <h1 className="f1">RoboFriendsHooks</h1> 
           <SearchBox searchChange={this.onSearchBarChange} />
           <Scroll>
             <ErrorBoundary>
